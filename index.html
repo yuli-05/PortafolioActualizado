@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portafolio</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+<!--
+<header>
+  <nav class="navbar">
+    <div class="brand">
+        <h2>JD</h2>
+    </div>
+    <ul class="menu">
+        <li><a class="active" href="#">Inicio</a></li>
+        <li><a href="#about">Acerca de mi</a></li>
+        <li><a href="#briefcase">Portafolio</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#footer">Contacto</a></li>
+    </ul>
+</nav>
+</header>-->
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>JD</h2>
+                </div>
+                <ul class="menu">
+                    <li><a class="active" href="#">Inicio</a></li>
+                    <li><a href="#about">Acerca de mi</a></li>
+                    <li><a href="#briefcase">Portafolio</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="info-content container">
+                <h1>Soy Julissa Dominguez Badillo </h1>
+                <a download href="./Docs/Currículum Julissa.pdf">
+                    <button class="download-cv">Descargar CV</button>
+                </a>
+            </div>
+            <img src="./img/web_site-removebg-preview.png" alt="Developer">
+        </main>
+    </div>
+
+    <section class="about" id="about">
+    <div class="about">
+        <img src="./img/blog-removebg-preview.png" alt="about">
+    
+        <div class="about-info container" >
+            <h2>Acerca de mi</h2>
+            <div class="divider"></div>
+            <p>Mi nombre es Julissa Dominguez Badillo, Soy ingeniero en Desarrollo y gestión de software, Front-end y Back End Developer enfocado a aplicaciones y desarrollo web.</p>
+            <p>He trabajado en diferentes proyectos escolares con diversas tecnologías. Confío en mis capacidades para proponer ideas y crear grandes proyectos.</p>
+            <p>Estoy motivada para desarrollar constantemente mis habilidades y crecer profesionalmente.</p>
+            <!--TODO cambiar clase del boton
+            <button class="download-cv">Read more</button>-->
+        </div>
+    </div>
+    </section>
+
+    <!--PORTAFOLIO-->
+    <section class="briefcase" id="briefcase">
+      <div class="briefcase-section ">
+        <h2>Portafolio</h2>
+        <div class="divider"></div>
+        <div class="briefcase-grid">
+          <div><a data-modal-id="saes"><img src="./img/SAES.jpeg" alt=""></a></div>
+          <div><a data-modal-id="medilan"><img src="./img/MEDI-LAN.jpeg" alt=""></a></div>
+          <div><a data-modal-id="calendario"><img src="./img/CALENDAR.jpeg" alt=""></a></div>
+          <div><a data-modal-id="bot"><img src="./img/BOT.jpeg" alt=""></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!--Skill-->
+    <section class="skills"  id="skills">
+      <div class="skill container container">
+        <div class="knowledge-part">
+          <h2>Conocimientos</h2>
+          <div class="divider"></div>
+          <div class="knowledge">
+            <div><img src="./img/html.png" alt="">
+              <h3>HTML</h3>
+            </div>
+            <div><img src="./img/sql.png" alt="">
+              <h3>MYSQL</h3>
+            </div>
+            <div><img src="./img/css.png" alt="">
+              <h3>CSS</h3>
+            </div>
+            <div><img src="./img/python.png" alt="">
+              <h3>PYTHON</h3>
+            </div>
+            <div><img src="./img/django-icon-0.png" alt="">
+              <h3>DJANGO</h3>
+            </div>
+            <div><img src="./img/flutter.png" alt="">
+              <h3>FLUTTER</h3>
+            </div>
+            <div><img src="./img/js.png" alt="">
+              <h3>JS</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools-part">
+          <h2>Herramientas</h2>
+          <div class="divider"></div>
+          <div class="tools">
+            <div><img src="./img/git.png" alt="">
+              <h3>GIT HUB</h3>
+            </div>
+            <div><img src="./img/file_type_vscode_icon_130084.png" alt="">
+              <h3>VS CODE</h3>
+            </div>
+            <div><img src="./img/lighhouse.png" alt="">
+              <h3>LIGHTHOUSE</h3>
+            </div>
+            <div><img src="./img/boostrap.png" alt="">
+              <h3>BOOSTRAP</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer"  id="footer">
+    <footer class="footer"> 
+      <div class="footer-content container">
+      </div>
+      <div class="sotial-networks">
+        <a href="https://github.com/yuli-05"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/julissa-dominguez-649465252/"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    </footer>
+    </section>
+
+
+  <!-- Modal section 
+
+  <div id="saes" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+  
+      EJEMPLO DE PRUEBA
+      
+      <button class="eins-modal-close-button">OK</button>
+    </div>
+  </div>
+ -->
+
+<div id="saes" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview">
+          <img src="./img/SAES.jpeg" alt="">
+        </div>
+        <div class="eins-modal-text">
+          <p>DESCRIPCIÓN:</p>
+          <p>El objetivo de este proyecto es gestionar eficientemente los datos médicos, así como el inventario de medicamentos dentro del área de enfermería de la Universidad Tecnológica de Tulancingo a través de una herramienta tecnológica, la cual manejará el médico, enfermero, o encargado en turno.</p>
+        <div class="eins-modal-text-2">
+          <span>ENLACE</span><a href="#"></a>
+          <a href="https://github.com/yuli-05/integradora_SAES"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>tecnologías usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="./img/python.png" alt="">
+            <img src="./img/django-icon-0.png" alt="">
+            <img src="./img/css.png" alt="">
+            <img src="./img/html.png" alt="">
+            <img src="./img/js.png" alt="">
+            <img src="./img/sqlite.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="medilan" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview">
+          <img src="./img/MEDI-LAN.jpeg" alt="">
+        </div>
+        <div class="eins-modal-text">
+          <p>DESCRIPCIÓN:</p>
+          <p>Este proyecto está destinado a resolver la falta de información de los pacientes, así como del personal médico, acerca de los medicamentos. Para estar informados y conocer el uso de cada medicamento, así como sus presentaciones, usos, contraindicaciones, dosis, lo cual promueve el cuidado de la salud, facilitando el acceso a la información. Así mismo incluir un control de medicamentos para que los pacientes puedan realizar un seguimiento</p>
+        <div class="eins-modal-text-2">
+          <span>ENLACE</span><a href="#"></a>
+          <a href="https://github.com/yuli-05/Medi-lan-Integradora"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>tecnologías usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="./img/flutter.png" alt="">
+            <img src="./img/api.png" alt="">
+            <img src="./img/sqlite.png alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="calendario" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview">
+          <img src="./img/CALENDAR.jpeg" alt="">
+        </div>
+        <div class="eins-modal-text">
+          <p>DESCRIPCIÓN:</p>
+          <p>El objetivo de este proyecto es una aplicación movil la cual muestra un calendario en el que se puede agregar recordatorios</p>
+        <div class="eins-modal-text-2">
+          <span>ENLACE</span><a href="#"></a>
+          <a href="https://github.com/yuli-05/Calendar_flutter"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="eins-modal-text-3">
+          <span>tecnologías usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="./img/flutter.png" alt="">
+            <img src="./img/sqlite.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bot" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview">
+          <img src="./img/BOT.jpeg" alt="">
+        </div>
+        <div class="eins-modal-text">
+          <p>DESCRIPCIÓN:</p>
+          <p>Turisttul es un chatbot en google assistant en el cual te ofrece información sobre el municipo de Tulancingo, Hidalgo.</p>
+        <div class="eins-modal-text-2">
+          <span>ENLACE</span><a href="#"></a>
+          <a href="https://github.com/yuli-05/ChatBot_Turisttul"><i class="fab fa-github"></i></a>
+        </div>
+        <!--<div class="eins-modal-text-3">
+          <span>tecnologías usadas:</span>
+          <div class="eins-modal-tec">
+            <img src="./img/python.png" alt="">
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+
+    <!--<section class="social" id="socialid">
+      <div class="social-section">
+        <h2>Contacto</h2>
+        <div class="divider"></div>
+        <a href="#"><img src="" alt=""></a>
+      </div>
+    </section>-->
+
+
+
+<!--Portafolio
+    <div class="portfolio">
+        <div class="portfolio-heading">
+          <h2>Mi Portafolio</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Project Description</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Project Details</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Project Description</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Project Details</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Project Description</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Project Details</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="contact-section">
+        <div class="contact-heading">
+          <h2>Keep in touch</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+          <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png" alt="">
+          <div class="contact-form">
+            <h4>Send me a message...</h4>
+            <form class="form-group">
+              <input type="text" placeholder="Name" class="input">
+              <input type="email" placeholder="Email" class="input">
+              <textarea name="message" placeholder="Place your message here..."></textarea>
+              <button type="submit" class="btn-submit">Send message</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>John Carter</h2>
+          <h5>Frontend Developer</h5>
+        </div>
+        <div class="sotial-networks">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </footer>  -->
+
+</body>
+</html>
